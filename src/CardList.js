@@ -6,7 +6,11 @@ import Card from './Card';
 const CardList = function ({robots}) {
 
   const cardComponent = robots.map(function(user,i) {
-    return <Card key={i} id={robots[i].id} name={robots[i].name} email={robots[i].email}/>
+    return <Card 
+              key={i} 
+              id={robots[i].id} 
+              name={robots[i].name} 
+              email={robots[i].email}/>
   })
 
   return(
@@ -17,4 +21,4 @@ const CardList = function ({robots}) {
 
 }
 
-export default CardList
+export default CardList;
